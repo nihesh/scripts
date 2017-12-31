@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Nihesh Anderson - knandy
+
+# createws - Create Workspace | This script installs all the required applications used by knandy
+
+# Tmux for command line
+sudo apt-get install tmux
+
+# Sublime text-3
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get install sublime-text-installer
+
+
