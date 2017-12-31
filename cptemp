@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cat `which cptemp`.data >> $1
+subl $1
