@@ -1,4 +1,7 @@
 #!/bin/sh
 
+# Usage		: cptemp <filename>.cpp
+# Action	: opens <filename>.cpp, appends the template in cptemp.data and opens the file in sublime text editor
+
 cat `which cptemp`.data >> $1
 subl $1
