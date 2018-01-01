@@ -1,12 +1,7 @@
 #!/bin/bash
 
-# assumes 16 bit network address, pings all 256*256 addresses and filters out active connections
+# assumes 16 bit network address, pings 256 addresses corresponding to $1(3rd byte) and filters out active connections
+# pinglan 32 searches for all active hosts in 192.168.32.*
 
-for ip1 in $(seq 1 254); 
-do 
-	for ip2 in $(seq 1 254);
-	do
-		ping -c 1 192.168.$ip1.$ip2 > /dev/null; 
-	    [ $? -eq 0 ] && echo "192.168.$ip1.$ip2 UP" || : ;
-	done
-done
+nmap -sP 192.168.$1.1/24
+
