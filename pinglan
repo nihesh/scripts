@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# assumes 16 bit network address, pings all 256*256 addresses and filters out active connections
+
+for ip1 in $(seq 1 254); 
+do 
+	for ip2 in $(seq 1 254);
+	do
+		ping -c 1 192.168.$ip1.$ip2 > /dev/null; 
+	    [ $? -eq 0 ] && echo "192.168.$ip1.$ip2 UP" || : ;
+	done
+done
