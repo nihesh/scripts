@@ -2,14 +2,6 @@
 
 # cpkit executable is useful for cp users who work on sublime text
 
-if ["$1" == "-r"];
-then
-
-	echo "hi";
-
-else
-
-	# Creates a new file named [1], fills it up with programming template and opens it in sublime-text
-	cat `which cpkit`.data >> $1
-	subl $1
-fi
+# Creates a new file named [1], fills it up with programming template and opens it in sublime-text
+cat `which cpkit`.data >> $1
+subl $1
