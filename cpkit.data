@@ -9,9 +9,24 @@ using namespace std;
 
 typedef long long ll;
 typedef tree<ll,null_type,less<ll>,rb_tree_tag,tree_order_statistics_node_update> ordered_set;
+ll MOD=1000000007;
+
+#define fast_cin() ios_base::sync_with_stdio(false)
+#define pb push_back
+#define gcd(a,b) __gcd((a),(b))
+#define lcm(a,b) ((a)*(b))/gcd((a),(b))
+#define debug1(x) cerr << x << endl;
+#define debug2(x,y) cerr << x << " " << y << endl;
+#define debug3(x,y,z) cerr << x << " " << y << " " << z << endl;
+#define FOR(i, a, b) for (int i=a; i<(b); i++)
+#define FORR(i, a, b) for (int i=a; i>=(b); i--)
+ll readInt(){ll inp; cin>>inp; return inp;}
+string readStr(){string inp; cin>>inp; return inp;}
+double readDouble(){double inp; cin>>inp; return inp;}
+ll power(ll a, ll n, ll md){if(n==0){return 1;}else{int res=power(a,n/2,md);res=(res*res)%md;if(n%2!=0){res=(res*a)%md;}return res;}}
 
 int main(){
-	ios_base::sync_with_stdio(false);
+	fast_cin();
 	
 	return 0;
 }
