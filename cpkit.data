@@ -20,9 +20,9 @@ ll MOD=1000000007;
 #define debug3(x,y,z) cerr << x << " " << y << " " << z << endl;
 #define FOR(i, a, b) for (int i=a; i<(b); i++)
 #define FORR(i, a, b) for (int i=a; i>=(b); i--)
-ll readInt(){ll inp; cin>>inp; return inp;}
-string readStr(){string inp; cin>>inp; return inp;}
-double readDouble(){double inp; cin>>inp; return inp;}
+ll nextInt(){ll inp; cin>>inp; return inp;}
+string nextStr(){string inp; cin>>inp; return inp;}
+double nextDouble(){double inp; cin>>inp; return inp;}
 ll power(ll a, ll n, ll md){if(n==0){return 1;}else{int res=power(a,n/2,md);res=(res*res)%md;if(n%2!=0){res=(res*a)%md;}return res;}}
 
 int main(){
