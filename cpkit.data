@@ -8,7 +8,7 @@ using namespace __gnu_pbds;
 using namespace std;
 
 typedef long long ll;
-typedef tree<ll,null_type,less<ll>,rb_tree_tag,tree_order_statistics_node_update> ordered_set;
+typedef tree<ll,null_type,less<ll>,rb_tree_tag,tree_order_statistics_node_update> ordered_set; // find_by_order, order_of_key
 ll MOD=1000000007;
 
 #define fast_cin() ios_base::sync_with_stdio(false)
@@ -20,6 +20,8 @@ ll MOD=1000000007;
 #define debug3(x,y,z) cerr << x << " " << y << " " << z << endl;
 #define FOR(i, a, b) for (int i=a; i<(b); i++)
 #define FORR(i, a, b) for (int i=a; i>=(b); i--)
+ll INF = 2000000000000000001;
+double EPS = 1e-9;
 ll nextInt(){ll inp; cin>>inp; return inp;}
 string nextStr(){string inp; cin>>inp; return inp;}
 double nextDouble(){double inp; cin>>inp; return inp;}
@@ -30,6 +32,7 @@ void mix(int* a, int* b){shuffle(a,b,grndm);}
 
 int main(){
 	fast_cin();
-	
+	// freopen("input.in","r",stdin);
+	// freopen("output.out","w",stdout);
 	return 0;
 }
