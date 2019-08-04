@@ -27,10 +27,9 @@ void __f(const char *names, Arg1 &&arg1, Args &&... args) {
 #define trace(...)
 #endif // ifndef ONLINE_JUDGE
 
+#define endl '\n'
 #define fast_cin() ios_base::sync_with_stdio(false)
 #define pb push_back
-#define gcd(a,b) __gcd((a),(b))
-#define lcm(a,b) ((a)*(b))/gcd((a),(b))
 #define debug1(x) cerr << x << endl;
 #define debug2(x,y) cerr << x << " " << y << endl;
 #define debug3(x,y,z) cerr << x << " " << y << " " << z << endl;
