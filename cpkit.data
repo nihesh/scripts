@@ -8,6 +8,8 @@ using namespace __gnu_pbds;
 using namespace std;
 
 typedef long long ll;
+typedef vector<int> vi;
+typedef vector<vi> vvi;
 typedef long double ld;
 typedef tree<ll,null_type,less<ll>,rb_tree_tag,tree_order_statistics_node_update> ordered_set; // find_by_order, order_of_key
 ll MOD=1000000007;
@@ -17,7 +19,7 @@ ll MOD=1000000007;
 #define pb push_back
 ll INF = 2000000000000000001;
 long double EPS = 1e-9;
-ll power(ll a, ll n, ll md){if(n==0){return 1;}else{int res=power(a,n/2,md);res=(res*res)%md;if(n%2!=0){res=(res*a)%md;}return res;}}
+ll power(ll a, ll n, ll md){if(n==0){return 1;}else{ll res=power(a,n/2,md);res=(res*res)%md;if(n%2!=0){res=(res*a)%md;}return res;}}
 random_device rndm;
 mt19937 grndm(rndm());
 void mix(int* a, int* b){shuffle(a,b,grndm);}
@@ -28,3 +30,21 @@ int main(){
 	// freopen("output.out","w",stdout);
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
